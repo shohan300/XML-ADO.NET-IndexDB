@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2 >INDEXEDDB DATABASE</h2>
+        <table class="inputtable">
+            <tr>
+                <td> First Name:</td>
+                <td><input type="text" name="rollno" id="firstName" placeholder="Enter First Name" /></td>
+            </tr>
+            <tr>
+                <td> Last Name:</td>
+                <td><input type="text" name="name" id="lastName" placeholder="Enter Last Name" /></td>
+            </tr>
+            <tr>
+                <td> Email :</td>
+                <td><input type="text" name="name" id="city" placeholder="Enter Email Address"/></td>
+            </tr>
+            <tr>
+                <td> Mobile No:</td>
+                <td><input type="text" name="name" id="mobile" placeholder="Enter Mobile No"/></td>
+            </tr>
+
+            <tr>
+                <td> Image Upload:</td>
+                <td><input type="file" accept="image/x-png,image/gif,image/jpeg" name="prImage" id="prImage" /></td>
+            </tr>
+        </table>
+
+
+        <br>
+        <img id="holdImg" src="images/placeholder.png" class="img-responsive" alt="" style="height: 100px;"/>
+
+        <br>
+        <br>
+
+        <div id="dropZone"> Drop your file here....</div>
+
+
+        <input type="button" name="addBtn" value="Add" id="addBtn"/>
+        <input type="button" name="updateBtn" value="Update" id="updateBtn"/>
+        <input type="button" name="deleteBtn" value="Delete" id="deleteBtn"/>
+
+        <br/>
+        <br/>
+        
+        <table>
+            <tr>
+                <td> ID:</td>
+                <td><input type="text" id="ddlid" placeholder="Enter ID" /></td>
+                <td><input type="button" value="Show" id="showinfo"/></td>
+            </tr>
+        </table>
+
+
+        <br>
+        <table class="outputtable"> 
+            <tr>  
+                <td>ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email Address</td>
+                <td>Mobile</td>
+                <td>Image</td>
+            </tr>
+            <tbody id="datalist"></tbody>
+        </table>
+
+    </div>
+    
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
